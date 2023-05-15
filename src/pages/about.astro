@@ -4,19 +4,21 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "About Me";
 
 const identity = {
-  firstName: "Sarah",
-  country: "Canada",
-  occupation: "Technical Writer",
-  hobbies: ["photography", "birdwatching", "baseball"],
+  firstName: "Jordan",
+  country: "USA",
+  occupation: "Developer Relations Engineer",
+  hobbies: ["video games", "running", "tinkering with electronics", "keyboards", "traveling", "adventuring"],
 };
 
 const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
 
 const happy = true;
-const finished = false;
+const finished = true;
 const goal = 3;
 
-const skillColor = "navy";
+const skillColor = "white";
+const fontWeight = 500;
+const textCase = "all-caps"
 ---
 
 <BaseLayout pageTitle={pageTitle}>
@@ -39,3 +41,15 @@ const skillColor = "navy";
 
 {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
 </BaseLayout>
+
+<style define:vars={{skillColor, fontWeight, textCase}}>
+  h1 {
+    color: purple;
+    font-size: 4rem;
+  }
+  .skill {
+    color: var(--skillColor);
+    font-weight: var(--fontWeight);
+    text-transform: var(--textCase);
+  }
+</style>
