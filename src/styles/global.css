@@ -1,5 +1,5 @@
 html {
-    background-color: #f1f5f9;
+    background-color: #FAFAFA;
     font-family: sans-serif;
   }
   
@@ -34,27 +34,32 @@ html {
   background-color: #ff9776;
 }
 
-.nav-links {
-  width: 100%;
-  top: 5rem;
-  left: 48px;
-  background-color: #ff9776;
-  display: none;
-  margin: 0;
+.navbar {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.nav-links a {
-  display: block;
-  text-align: center;
-  padding: 10px 0;
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li a {
   text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-transform: uppercase;
+  color: #333333; /* Text color for the links */
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover, a:focus {
-  background-color: #ff9776;
+  color: #000000; /* Text color for links on hover */
 }
 
 .expanded {
@@ -88,4 +93,8 @@ html.dark {
 
 .dark .nav-links a {
   color: #fff;
+}
+
+.dark .nav-links a:hover, a:focus {
+  color: #FFD700; /* Text color for links on hover */
 }
