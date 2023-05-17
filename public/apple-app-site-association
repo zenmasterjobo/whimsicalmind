@@ -3,6 +3,7 @@
       "details": [
            {
              "appIDs": [ "VJ2956LWD4.com.square.squaredevGraphqlPkce"],
+             "paths": ["*"],
              "components": [
                {
                   "/": "/openapp/*",
