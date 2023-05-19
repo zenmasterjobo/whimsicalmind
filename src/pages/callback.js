@@ -1,3 +1,3 @@
 export async function get({ redirect }) {
-    return redirect('/openapp', 307);
+    return redirect('https://soft-raindrop-bf7931.netlify.app/openapp', 307);
 }
