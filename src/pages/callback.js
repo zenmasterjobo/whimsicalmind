@@ -1,3 +1,3 @@
 export async function get({ redirect }) {
-    return redirect('https://soft-raindrop-bf7931.netlify.app/openapp', 307);
+    return redirect('https://bergero.dev/openapp', 307);
 }
